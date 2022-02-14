@@ -1,0 +1,41 @@
+.bir {
+font: size 200px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    border-style: solid;
+    font-weight: bold; 
+
+
+    
+  }
+  html , body {
+    height: 100%;
+  }
+  .container {
+    height: 100%;
+  }
+  .tile {
+        margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    user-select: none;
+  }
+
+  .inep {
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+
+  }

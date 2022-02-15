@@ -108,7 +108,7 @@ let e = document.getElementById("5")
 //// kilitleme
 
 
-
+///////////////1
 function keyup1(){
 
     i=0;
@@ -147,241 +147,260 @@ function keyup1(){
    
 
 
-    setTimeout(controler, 1000, a1);
-    setTimeout(controler, 2000, a2);
-    setTimeout(controler, 3000, a3);
-    setTimeout(controler, 4000, a4);
-    setTimeout(controler, 5000, a);
-
+    setTimeout(controler, 100, a1);
+    setTimeout(controler, 800, a2);
+    setTimeout(controler, 1500, a3);
+    setTimeout(controler, 2200, a4);
+    setTimeout(controler, 2900, a);
 
           
     }
         else{ document.getElementById("birinci").classList.add("bounceIn")
-
+        function regeri(){
+            document.getElementById("birinci").classList.remove("bounceIn")
+        }
+        setInterval(regeri,3000)
            }
         }
 
+//////////// 2
+        function keyup2(){
 
-function keyup2(){
-    i=0;
-    function controler(harfi){
-      
+            i=0;
+        
+            deneme1 = [b1.value,b2.value,b3.value,b4.value,b.value]
+        
+            var sonuc = tdk.indexOf(deneme1.join(''))
+            if(sonuc>=0) {
+                                                                    b1.disabled = true;
+                                                                    b2.disabled = true;
+                                                                    b3.disabled = true;
+                                                                    b4.disabled = true;
+                                                                    b.disabled = true;
+        
+        
+            function controler(harfi){            
+                         
+                    if ( harfi.value == kelime[i]){
+                        harfi.classList.add("yesil")  
+                        console.log("yeşil oldu" + i+harfi.value)            
+                    }
+        
+                        else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
+                            harfi.classList.remove("yesil")    
+                            harfi.classList.add("sari")
+                            console.log("sarı oldu" + i+harfi.value)
+                        }
+        
+                else {
+                harfi.classList.add("gri")
+                console.log("gri oldu" + i+ harfi.value)
+                }
+              
+            i++;
+            }
+           
+        
+        
+            setTimeout(controler, 100, b1);
+            setTimeout(controler, 800, b2);
+            setTimeout(controler, 1500, b3);
+            setTimeout(controler, 2200, b4);
+            setTimeout(controler, 2900, b);
+        
+                  
+            }
+                else{ document.getElementById("ikinci").classList.add("bounceIn")
+                function regeri(){
+                    document.getElementById("ikinci").classList.remove("bounceIn")
+                }
+                setInterval(regeri,3000)
+                   }
+                }
+        ////////////// 3       
+       
+        function keyup3(){
 
+                            i=0;
+                        
+                            deneme1 = [c1.value,c2.value,c3.value,c4.value,c.value]
+                        
+                            var sonuc = tdk.indexOf(deneme1.join(''))
+                            if(sonuc>=0) {
+                                                                                    c1.disabled = true;
+                                                                                    c2.disabled = true;
+                                                                                    c3.disabled = true;
+                                                                                    c4.disabled = true;
+                                                                                    c.disabled = true;
+                        
+                        
+                            function controler(harfi){            
+                                         
+                                    if ( harfi.value == kelime[i]){
+                                        harfi.classList.add("yesil")  
+                                        console.log("yeşil oldu" + i+harfi.value)            
+                                    }
+                        
+                                        else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
+                                            harfi.classList.remove("yesil")    
+                                            harfi.classList.add("sari")
+                                            console.log("sarı oldu" + i+harfi.value)
+                                        }
+                        
+                                else {
+                                harfi.classList.add("gri")
+                                console.log("gri oldu" + i+ harfi.value)
+                                }
+                              
+                            i++;
+                            }
+                           
+                        
+                        
+                            setTimeout(controler, 100, c1);
+                            setTimeout(controler, 800, c2);
+                            setTimeout(controler, 1500, c3);
+                            setTimeout(controler, 2200, c4);
+                            setTimeout(controler, 2900, c);
+                        
+                                  
+                            }
+                                else{ document.getElementById("ucuncu").classList.add("bounceIn")
+                                function regeri(){
+                                    document.getElementById("ucuncu").classList.remove("bounceIn")
+                                }
+                                setInterval(regeri,3000)
+                                   }
+                                }
+        ///////////4
+        function keyup4(){
 
-            
-            if ( harfi.value == kelime[i]){
-             harfi.classList.add("bg-success")  
-             console.log("yeşil oldu" + i+harfi.value)
+                                    i=0;
+                                
+                                    deneme1 = [d1.value,d2.value,d3.value,d4.value,d.value]
+                                
+                                    var sonuc = tdk.indexOf(deneme1.join(''))
+                                    if(sonuc>=0) {
+                                                                                            d1.disabled = true;
+                                                                                            d2.disabled = true;
+                                                                                            d3.disabled = true;
+                                                                                            d4.disabled = true;
+                                                                                            d.disabled = true;
+                                
+                                
+                                    function controler(harfi){            
+                                                 
+                                            if ( harfi.value == kelime[i]){
+                                                harfi.classList.add("yesil")  
+                                                console.log("yeşil oldu" + i+harfi.value)            
+                                            }
+                                
+                                                else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
+                                                    harfi.classList.remove("yesil")    
+                                                    harfi.classList.add("sari")
+                                                    console.log("sarı oldu" + i+harfi.value)
+                                                }
+                                
+                                        else {
+                                        harfi.classList.add("gri")
+                                        console.log("gri oldu" + i+ harfi.value)
+                                        }
+                                      
+                                    i++;
+                                    }
+                                   
+                                
+                                
+                                    setTimeout(controler, 100, d1);
+                                    setTimeout(controler, 800, d2);
+                                    setTimeout(controler, 1500, d3);
+                                    setTimeout(controler, 2200, d4);
+                                    setTimeout(controler, 2900, d);
+                                
+                                          
+                                    }
+                                        else{ document.getElementById("dorduncu").classList.add("bounceIn")
+                                        function regeri(){
+                                            document.getElementById("dorduncu").classList.remove("bounceIn")
+                                        }
+                                        setInterval(regeri,3000)
+                                           }
+                                        }
+                    ///////////////////5
+                function keyup5(){
 
-             
-         }
-
-       else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
-        harfi.classList.remove("bg-success")    
-        harfi.classList.add("bg-warning")
-        console.log("sarı oldu" + i+harfi.value)
-
-       }
-
-       else {
-        harfi.classList.add("bg-secondary")
-        console.log("gri oldu" + i+ harfi.value)
-
-       }
-      
-    i++;
-}
-    controler(b1);
-    controler(b2);
-    controler(b3);
-    controler(b4);
-    controler(b);
-
-      b1.disabled = true;
-      b2.disabled = true;
-      b3.disabled = true;
-      b4.disabled = true;
-      b.disabled = true;
-
-
-
-     ////////let bir = document.querySelector('.bir');
-    ////// bir.disabled = true;
-
-}
-
-function keyup3(){
-    i=0;
-    function controler(harfi){
-      
-
-
-            
-            if ( harfi.value == kelime[i]){
-             harfi.classList.add("bg-success")  
-             console.log("yeşil oldu" + i+harfi.value)
-
-             
-         }
-
-       else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
-        harfi.classList.remove("bg-success")    
-        harfi.classList.add("bg-warning")
-        console.log("sarı oldu" + i+harfi.value)
-
-       }
-
-       else {
-        harfi.classList.add("bg-secondary")
-        console.log("gri oldu" + i+ harfi.value)
-
-       }
-      
-    i++;
-}
-    controler(c1);
-    controler(c2);
-    controler(c3);
-    controler(c4);
-    controler(c);
-
-      c1.disabled = true;
-      c2.disabled = true;
-      c3.disabled = true;
-      c4.disabled = true;
-      c.disabled = true;
-
-
-
-     ////////let bir = document.querySelector('.bir');
-    ////// bir.disabled = true;
-
-}
-
-function keyup4(){
-    i=0;
-    function controler(harfi){
-      
-
-
-            
-            if ( harfi.value == kelime[i]){
-             harfi.classList.add("bg-success")  
-             console.log("yeşil oldu" + i+harfi.value)
-
-             
-         }
-
-       else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
-        harfi.classList.remove("bg-success")    
-        harfi.classList.add("bg-warning")
-        console.log("sarı oldu" + i+harfi.value)
-
-       }
-
-       else {
-        harfi.classList.add("bg-secondary")
-        console.log("gri oldu" + i+ harfi.value)
-
-       }
-      
-    i++;
-}
-    controler(d1);
-    controler(d2);
-    controler(d3);
-    controler(d4);   
-    controler(d);
-
-      d1.disabled = true;
-      d2.disabled = true;
-      d3.disabled = true;
-      d4.disabled = true;
-      d.disabled = true;
-
-
-
-     ////////let bir = document.querySelector('.bir');
-    ////// bir.disabled = true;
-
-}
-
-function keyup5(){
-    i=0;
-    function controler(harfi){
-      
-
-
-            
-            if ( harfi.value == kelime[i]){
-             harfi.classList.add("bg-success")  
-             console.log("yeşil oldu" + i+harfi.value)
-
-             
-         }
-
-       else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
-        harfi.classList.remove("bg-success")    
-        harfi.classList.add("bg-warning")
-        console.log("sarı oldu" + i+harfi.value)
-
-       }
-
-       else {
-        harfi.classList.add("bg-secondary")
-        console.log("gri oldu" + i+ harfi.value)
-
-       }
-      
-    i++;
-}
-    controler(e1);
-    controler(e2);
-    controler(e3);
-    controler(e4);
-    controler(e);
-
-      e1.disabled = true;
-      e2.disabled = true;
-      e3.disabled = true;
-      e4.disabled = true;
-      e.disabled = true;
-
-
-
-     ////////let bir = document.querySelector('.bir');
-    ////// bir.disabled = true;
-
-}
+                                            i=0;
+                                        
+                                            deneme1 = [e1.value,e2.value,e3.value,e4.value,e.value]
+                                        
+                                            var sonuc = tdk.indexOf(deneme1.join(''))
+                                            if(sonuc>=0) {
+                                                                                                    e1.disabled = true;
+                                                                                                    e2.disabled = true;
+                                                                                                    e3.disabled = true;
+                                                                                                    e4.disabled = true;
+                                                                                                    e.disabled = true;
+                                        
+                                        
+                                            function controler(harfi){            
+                                                         
+                                                    if ( harfi.value == kelime[i]){
+                                                        harfi.classList.add("yesil")  
+                                                        console.log("yeşil oldu" + i+harfi.value)            
+                                                    }
+                                        
+                                                        else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
+                                                            harfi.classList.remove("yesil")    
+                                                            harfi.classList.add("sari")
+                                                            console.log("sarı oldu" + i+harfi.value)
+                                                        }
+                                        
+                                                else {
+                                                harfi.classList.add("gri")
+                                                console.log("gri oldu" + i+ harfi.value)
+                                                }
+                                              
+                                            i++;
+                                            }
+                                           
+                                        
+                                        
+                                            setTimeout(controler, 100, e1);
+                                            setTimeout(controler, 800, e2);
+                                            setTimeout(controler, 1500, e3);
+                                            setTimeout(controler, 2200, e4);
+                                            setTimeout(controler, 2900, e);
+                                        
+                                                  
+                                            }
+                                                else{ document.getElementById("besinci").classList.add("bounceIn")
+                                                function regeri(){
+                                                    document.getElementById("ikinci").classList.remove("bounceIn")
+                                                }
+                                                setInterval(regeri,3000)
+                                                   }
+                                                }
+                                                
+                                                
 
 let tdk = ["abacı",
-"abadi",
 "abalı",
-"Abana",
+"abana",
 "abani",
 "abaşo",
-"Abaza",
-"Abbas",
+"abaza",
+"abbas",
 "abdal",
-"abece",
-"Abhaz",
 "abide",
 "abiye",
 "ablak",
 "abone",
-"abosa",
-"abraş",
-"abuli",
 "acaba",
-"Acara",
 "acele",
 "acemi",
 "aceze",
-"acıca",
 "acılı",
 "acıma",
-"acibe",
-"acube",
 "acuze",
 "açgöz",
 "açlık",
@@ -390,31 +409,21 @@ let tdk = ["abacı",
 "adale",
 "adalı",
 "adama",
-"Adana",
-"adedî",
-"adem ",
-"adese",
-"âdeta",
+"adana",
+"adeta",
 "adına",
 "adres",
 "adsal",
 "adsız",
 "afaki",
 "afazi",
-"Afgan",
+"afgan",
 "afife",
 "afili",
 "afişe",
-"afoni",
-"afsun",
-"Afşar",
-"aftos",
+"afşar",
 "afyon",
 "agami",
-"agora",
-"agraf",
-"ağcık",
-"ağılı",
 "Ağın ",
 "ağlak",
 "ağmak",
@@ -426,7 +435,6 @@ let tdk = ["abacı",
 "ahcar",
 "ahenk",
 "ahfat",
-"Ahfeş",
 "ahize",
 "ahkâm",
 "ahlaf",

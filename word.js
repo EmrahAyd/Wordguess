@@ -127,18 +127,18 @@ function keyup1(){
     function controler(harfi){            
                  
             if ( harfi.value == kelime[i]){
-                harfi.classList.add("bg-success")  
+                harfi.classList.add("yesil")  
                 console.log("yeşil oldu" + i+harfi.value)            
             }
 
                 else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
-                    harfi.classList.remove("bg-success")    
-                    harfi.classList.add("bg-warning")
+                    harfi.classList.remove("yesil")    
+                    harfi.classList.add("sari")
                     console.log("sarı oldu" + i+harfi.value)
                 }
 
         else {
-        harfi.classList.add("bg-secondary")
+        harfi.classList.add("gri")
         console.log("gri oldu" + i+ harfi.value)
         }
       
@@ -147,16 +147,18 @@ function keyup1(){
    
 
 
-    controler(a1);
-    controler(a2);
-    controler(a3);
-    controler(a4);
-    controler(a);
+    setTimeout(controler, 1000, a1);
+    setTimeout(controler, 2000, a2);
+    setTimeout(controler, 3000, a3);
+    setTimeout(controler, 4000, a4);
+    setTimeout(controler, 5000, a);
 
 
           
     }
-        else{window.alert("Böyle bir kelime yok");}
+        else{ document.getElementById("birinci").classList.add("bounceIn")
+
+           }
         }
 
 

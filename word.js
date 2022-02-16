@@ -183,7 +183,7 @@ function keyup1(){
                          
                     if ( harfi.value == kelime[i]){
                         harfi.classList.add("yesil")  
-                        console.log("yeşil oldu" + i+harfi.value)            
+                        console.log("yeşil oldu " + i+harfi.value)            
                     }
         
                         else if(harfi.value == kelime[ (i + 1) % 7] || harfi.value == kelime[(i + 2) % 7] || harfi.value == kelime[(i + 3) % 7] || harfi.value == kelime[(i + 4) % 7]){            
@@ -194,7 +194,7 @@ function keyup1(){
         
                 else {
                 harfi.classList.add("gri")
-                console.log("gri oldu" + i+ harfi.value)
+                console.log("gri oldu " + i+ harfi.value)
                 }
               
             i++;
